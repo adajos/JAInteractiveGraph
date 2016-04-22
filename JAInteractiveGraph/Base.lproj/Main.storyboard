@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PaV-gG-TPi" customClass="GraphView" customModule="JAInteractiveGraph" customModuleProvider="target">
-                                <rect key="frame" x="30" y="30" width="560" height="520"/>
+                                <rect key="frame" x="30" y="30" width="540" height="520"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showXAxisLabels" value="YES"/>
@@ -66,7 +66,7 @@
                             <constraint firstItem="kd7-4I-4fz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VIH-3g-0tW"/>
                             <constraint firstItem="PaV-gG-TPi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="avs-HM-qla"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oYw-Lu-njT" secondAttribute="bottom" constant="4" id="c4Z-5u-q72"/>
-                            <constraint firstItem="PaV-gG-TPi" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="10" id="jKf-d2-o50"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PaV-gG-TPi" secondAttribute="trailing" constant="10" id="e5S-cj-8Rs"/>
                         </constraints>
                     </view>
                     <connections>
