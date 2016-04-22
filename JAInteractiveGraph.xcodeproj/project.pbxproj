@@ -1,0 +1,339 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0310220B1CBFE7D100575715 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0310220A1CBFE7D100575715 /* AppDelegate.swift */; };
+		0310220D1CBFE7D100575715 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0310220C1CBFE7D100575715 /* ViewController.swift */; };
+		031022101CBFE7D100575715 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0310220E1CBFE7D100575715 /* Main.storyboard */; };
+		031022121CBFE7D100575715 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 031022111CBFE7D100575715 /* Assets.xcassets */; };
+		031022151CBFE7D100575715 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 031022131CBFE7D100575715 /* LaunchScreen.storyboard */; };
+		0310221D1CBFE7F500575715 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0310221C1CBFE7F500575715 /* GraphView.swift */; };
+		0310221F1CBFE80500575715 /* GraphPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0310221E1CBFE80500575715 /* GraphPointView.swift */; };
+		031022211CBFE89000575715 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031022201CBFE89000575715 /* ViewExtensions.swift */; };
+		031022231CBFE8AF00575715 /* CGExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031022221CBFE8AF00575715 /* CGExtensions.swift */; };
+		031022251CBFEA8C00575715 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031022241CBFEA8C00575715 /* UIColorExtension.swift */; };
+		03945B7F1CC9155700045E48 /* GraphLineStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03945B7E1CC9155700045E48 /* GraphLineStyle.swift */; };
+		03945B811CC9157A00045E48 /* GraphableDataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03945B801CC9157A00045E48 /* GraphableDataPoint.swift */; };
+		03945B831CC915BF00045E48 /* GraphViewDataSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03945B821CC915BF00045E48 /* GraphViewDataSourceDelegate.swift */; };
+		03945B851CC915FF00045E48 /* SimpleGraphDataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03945B841CC915FF00045E48 /* SimpleGraphDataPoint.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		031022071CBFE7D100575715 /* JAInteractiveGraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JAInteractiveGraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0310220A1CBFE7D100575715 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0310220C1CBFE7D100575715 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0310220F1CBFE7D100575715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		031022111CBFE7D100575715 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		031022141CBFE7D100575715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		031022161CBFE7D100575715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0310221C1CBFE7F500575715 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		0310221E1CBFE80500575715 /* GraphPointView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphPointView.swift; sourceTree = "<group>"; };
+		031022201CBFE89000575715 /* ViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		031022221CBFE8AF00575715 /* CGExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGExtensions.swift; sourceTree = "<group>"; };
+		031022241CBFEA8C00575715 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		03945B7E1CC9155700045E48 /* GraphLineStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphLineStyle.swift; sourceTree = "<group>"; };
+		03945B801CC9157A00045E48 /* GraphableDataPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphableDataPoint.swift; sourceTree = "<group>"; };
+		03945B821CC915BF00045E48 /* GraphViewDataSourceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphViewDataSourceDelegate.swift; sourceTree = "<group>"; };
+		03945B841CC915FF00045E48 /* SimpleGraphDataPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleGraphDataPoint.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		031022041CBFE7D100575715 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		031021FE1CBFE7D100575715 = {
+			isa = PBXGroup;
+			children = (
+				031022091CBFE7D100575715 /* JAInteractiveGraph */,
+				031022081CBFE7D100575715 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		031022081CBFE7D100575715 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				031022071CBFE7D100575715 /* JAInteractiveGraph.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		031022091CBFE7D100575715 /* JAInteractiveGraph */ = {
+			isa = PBXGroup;
+			children = (
+				0310220A1CBFE7D100575715 /* AppDelegate.swift */,
+				0310220C1CBFE7D100575715 /* ViewController.swift */,
+				0310220E1CBFE7D100575715 /* Main.storyboard */,
+				031022111CBFE7D100575715 /* Assets.xcassets */,
+				031022131CBFE7D100575715 /* LaunchScreen.storyboard */,
+				031022161CBFE7D100575715 /* Info.plist */,
+				03945B7E1CC9155700045E48 /* GraphLineStyle.swift */,
+				03945B801CC9157A00045E48 /* GraphableDataPoint.swift */,
+				03945B821CC915BF00045E48 /* GraphViewDataSourceDelegate.swift */,
+				03945B841CC915FF00045E48 /* SimpleGraphDataPoint.swift */,
+				0310221C1CBFE7F500575715 /* GraphView.swift */,
+				0310221E1CBFE80500575715 /* GraphPointView.swift */,
+				031022201CBFE89000575715 /* ViewExtensions.swift */,
+				031022221CBFE8AF00575715 /* CGExtensions.swift */,
+				031022241CBFEA8C00575715 /* UIColorExtension.swift */,
+			);
+			path = JAInteractiveGraph;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		031022061CBFE7D100575715 /* JAInteractiveGraph */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 031022191CBFE7D100575715 /* Build configuration list for PBXNativeTarget "JAInteractiveGraph" */;
+			buildPhases = (
+				031022031CBFE7D100575715 /* Sources */,
+				031022041CBFE7D100575715 /* Frameworks */,
+				031022051CBFE7D100575715 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JAInteractiveGraph;
+			productName = JAInteractiveGraph;
+			productReference = 031022071CBFE7D100575715 /* JAInteractiveGraph.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		031021FF1CBFE7D100575715 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = adams;
+				TargetAttributes = {
+					031022061CBFE7D100575715 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = KY7XLSY23G;
+					};
+				};
+			};
+			buildConfigurationList = 031022021CBFE7D100575715 /* Build configuration list for PBXProject "JAInteractiveGraph" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 031021FE1CBFE7D100575715;
+			productRefGroup = 031022081CBFE7D100575715 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				031022061CBFE7D100575715 /* JAInteractiveGraph */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		031022051CBFE7D100575715 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				031022151CBFE7D100575715 /* LaunchScreen.storyboard in Resources */,
+				031022121CBFE7D100575715 /* Assets.xcassets in Resources */,
+				031022101CBFE7D100575715 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		031022031CBFE7D100575715 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0310220D1CBFE7D100575715 /* ViewController.swift in Sources */,
+				031022251CBFEA8C00575715 /* UIColorExtension.swift in Sources */,
+				03945B7F1CC9155700045E48 /* GraphLineStyle.swift in Sources */,
+				0310220B1CBFE7D100575715 /* AppDelegate.swift in Sources */,
+				0310221F1CBFE80500575715 /* GraphPointView.swift in Sources */,
+				03945B811CC9157A00045E48 /* GraphableDataPoint.swift in Sources */,
+				031022231CBFE8AF00575715 /* CGExtensions.swift in Sources */,
+				03945B831CC915BF00045E48 /* GraphViewDataSourceDelegate.swift in Sources */,
+				031022211CBFE89000575715 /* ViewExtensions.swift in Sources */,
+				0310221D1CBFE7F500575715 /* GraphView.swift in Sources */,
+				03945B851CC915FF00045E48 /* SimpleGraphDataPoint.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0310220E1CBFE7D100575715 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0310220F1CBFE7D100575715 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		031022131CBFE7D100575715 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				031022141CBFE7D100575715 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		031022171CBFE7D100575715 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		031022181CBFE7D100575715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0310221A1CBFE7D100575715 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = JAInteractiveGraph/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adams.JAInteractiveGraph;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		0310221B1CBFE7D100575715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = JAInteractiveGraph/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adams.JAInteractiveGraph;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		031022021CBFE7D100575715 /* Build configuration list for PBXProject "JAInteractiveGraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				031022171CBFE7D100575715 /* Debug */,
+				031022181CBFE7D100575715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		031022191CBFE7D100575715 /* Build configuration list for PBXNativeTarget "JAInteractiveGraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0310221A1CBFE7D100575715 /* Debug */,
+				0310221B1CBFE7D100575715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 031021FF1CBFE7D100575715 /* Project object */;
+}

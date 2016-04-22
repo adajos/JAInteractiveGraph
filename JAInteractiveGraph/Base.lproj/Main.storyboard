@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JAInteractiveGraph" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PaV-gG-TPi" customClass="GraphView" customModule="JAInteractiveGraph" customModuleProvider="target">
+                                <rect key="frame" x="30" y="30" width="560" height="520"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showXAxisLabels" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showYAxisLabels" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kd7-4I-4fz">
+                                <rect key="frame" x="252" y="554" width="97" height="42"/>
+                                <color key="backgroundColor" red="0.039215686274509803" green="0.92156862745098034" blue="0.70588235294117641" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="5om-Po-7cL"/>
+                                    <constraint firstAttribute="height" constant="42" id="8Ic-sx-3IZ"/>
+                                </constraints>
+                                <state key="normal" title="Reload">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="reloadTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gQ2-As-RL2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYw-Lu-njT">
+                                <rect key="frame" x="380" y="554" width="97" height="42"/>
+                                <color key="backgroundColor" red="0.039215686270000001" green="0.92156862750000001" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" id="QSU-hM-L9f"/>
+                                    <constraint firstAttribute="height" constant="42" id="WiY-Co-WFY"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="97" id="kG6-Vd-PSf"/>
+                                    <constraint firstAttribute="width" constant="97" id="wDh-FG-JbB"/>
+                                </constraints>
+                                <state key="normal" title="Animate">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="maxTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NP7-Va-NNJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kd7-4I-4fz" secondAttribute="bottom" constant="4" id="4Pa-Sp-xkq"/>
+                            <constraint firstItem="oYw-Lu-njT" firstAttribute="leading" secondItem="kd7-4I-4fz" secondAttribute="trailing" constant="31" id="HbU-2V-d1t"/>
+                            <constraint firstItem="PaV-gG-TPi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="KoD-K3-mBZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PaV-gG-TPi" secondAttribute="bottom" constant="50" id="N9c-bP-N7F"/>
+                            <constraint firstItem="kd7-4I-4fz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VIH-3g-0tW"/>
+                            <constraint firstItem="PaV-gG-TPi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="avs-HM-qla"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oYw-Lu-njT" secondAttribute="bottom" constant="4" id="c4Z-5u-q72"/>
+                            <constraint firstItem="PaV-gG-TPi" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="10" id="jKf-d2-o50"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="graphView" destination="PaV-gG-TPi" id="TBC-ye-K49"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="429"/>
+        </scene>
+    </scenes>
+</document>
