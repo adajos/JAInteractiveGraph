@@ -52,7 +52,8 @@ import UIKit
     private var yAxisTopLabel: UILabel? = nil
     private var yAxisZeroLabel: UILabel? = nil
     private var yAxisBottomLabel: UILabel? = nil
-    private let xAxisLabelViewTagAdjustment = 1000
+    
+    private var xAxisLabels: [UILabel] = []
     private var displayLink: CADisplayLink? = nil
     private var lastDisplayLinkTimestamp: NSTimeInterval = 0
     
@@ -412,15 +413,16 @@ extension GraphView {
     
     func createXAxisLabelIfNeeded(index: Int, _ point: GraphableDataPoint) -> UILabel {
         
-        guard let theView = self.viewWithTag(index + xAxisLabelViewTagAdjustment),let theLabel = theView as? UILabel else {
-            return createAxisLabel(index, point)
+        
+       if self.xAxisLabels.count < index + 1 {
+            return createAxisLabel(point)
         }
         
-        return theLabel
+        return self.xAxisLabels[index]
         
     }
     
-    func createAxisLabel(index: Int, _ point: GraphableDataPoint) -> UILabel {
+    func createAxisLabel(point: GraphableDataPoint) -> UILabel {
         let axisLabelFont : UIFont = UIFont(descriptor: UIFontDescriptor.preferredFontDescriptorWithTextStyle(UIFontTextStyleBody), size: self.xAxisLabelFontSize)
         
         let label = UILabel()
@@ -429,9 +431,10 @@ extension GraphView {
         label.textAlignment = .Center
         label.textColor = xAxisLabelTextColor
         label.font = axisLabelFont
-        label.tag = index + xAxisLabelViewTagAdjustment
         self.addSubview(label)
         label.sizeToFit()
+        
+        self.xAxisLabels.append(label)
         return label
     }
     
